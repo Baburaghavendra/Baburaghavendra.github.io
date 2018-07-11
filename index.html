@@ -33,6 +33,7 @@ section {
   overflow: hidden;
  background:url(Header.jpg);
    background-repeat: no-repeat;
+	position: -webkit-sticky;
 	position: sticky;
     background-size: 100% 100%;
   padding: 10px 10px;
@@ -208,14 +209,14 @@ input[type="submit"] {
 <script>
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
+var header = document.getElementById("header");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    header.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    header.classList.remove("sticky");
   }
 }
 </script>
